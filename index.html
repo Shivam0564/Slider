@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="mahi.jpg" alt="1" />
+          <h1>Mahavir</h1>
+          <div class="details">
+            <h2>Mahavir🦾</h2>
+            <p>Bhai</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="rashi.jpg" alt="2" />
+          <h1>Rashi</h1>
+          <div class="details">
+            <h2>Rashi🫂</h2>
+            <p>Bestiee no.1</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="khush6.jpg" alt="3" />
+          <h1>Khushi</h1>
+          <div class="details">
+            <h2>Khushi❤️</h2>
+            <p>Bestest Friend</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="fruti2.jpg" alt="4" />
+          <h1>Fruti</h1>
+          <div class="details">
+            <h2>Fruti💖</h2>
+            <p>Pasandida Aurat</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="ayushi.jpg" alt="5" />
+          <h1>Ayushi</h1>
+          <div class="details">
+            <h2>Ayushi🤍</h2>
+            <p>Comfort Zone</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="shailee.jpg" alt="6" />
+          <h1>Shailee</h1>
+          <div class="details">
+            <h2>Shailee👧</h2>
+            <p>1st Friend of life</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="ranish.jpg" alt="7" />
+          <h1>Ranish</h1>
+          <div class="details">
+            <h2>Ranish✌️</h2>
+            <p>1st friend of School</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
